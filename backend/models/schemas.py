@@ -21,7 +21,7 @@ class FormulaResponse(BaseModel):
     hazard_classification: Optional[str] = None
     structure_image_url: Optional[str] = None
     structure_image_svg_url: Optional[str] = None
-    compund_url: Optional[str] = None
+    compound_url: Optional[str] = None
 
 
 class FormulaHistoryModel(BaseModel):
@@ -38,7 +38,7 @@ class FormulaHistoryModel(BaseModel):
     hazard_classification: Optional[str] = None
     structure_image_url: Optional[str] = None
     structure_image_svg_url: Optional[str] = None
-    compund_url: Optional[str] = None
+    compound_url: Optional[str] = None
 
 
     class Config:
