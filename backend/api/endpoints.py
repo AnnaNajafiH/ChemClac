@@ -3,15 +3,10 @@ from fastapi import APIRouter, Depends, HTTPException, Request
 from sqlalchemy.orm import Session
 
 from database import FormulaHistory, get_db
-from models.schemas import FormulaRequest, FormulaResponse, FormulaHistoryModel
-from services.formula_service import calculate_molar_mass
-from services.history_service import (
-    save_to_database, 
-    update_formula_in_history, 
-    delete_formula_from_history
-)
-from backend.services.pubchem_service import get_chemical_properties
-from core.config import settings
+from models import FormulaRequest, FormulaResponse, FormulaHistoryModel
+from services import calculate_molar_mass, save_to_database, update_formula_in_history, delete_formula_from_history
+from data import get_chemical_properties
+from core import settings
 
 router = APIRouter()
 

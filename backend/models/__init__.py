@@ -1,9 +1,11 @@
+"""
+Models package for ChemCalc backend.
+Contains Pydantic schemas and SQLAlchemy models.
+"""
 from .schemas import FormulaRequest, FormulaResponse, FormulaHistoryModel
-from .database import FormulaHistory
 
 __all__ = [
     "FormulaRequest", 
     "FormulaResponse", 
-    "FormulaHistoryModel", 
-    "FormulaHistory"
+    "FormulaHistoryModel"
 ]

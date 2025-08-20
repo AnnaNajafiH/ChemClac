@@ -4,8 +4,8 @@ from fastapi import Request
 from sqlalchemy.orm import Session
 
 from database import FormulaHistory
-from services.formula_service import calculate_molar_mass
-from utils.validators import validate_formula
+from .formula_service import calculate_molar_mass
+from utils import validate_formula
 
 
 def save_to_database(

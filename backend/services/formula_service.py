@@ -1,7 +1,7 @@
 import re
 from typing import List, Tuple
-from core.config import settings
-from utils.validators import validate_formula
+from core import settings
+from utils import validate_formula
 
 
 def parse_formula(formula: str) -> List[Tuple[str, int]]:

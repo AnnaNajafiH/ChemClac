@@ -2,9 +2,9 @@ import os
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from api.endpoints import router
-from core.config import settings
-from data.database import create_tables
+from api import router
+from core import settings
+from database import create_tables
 
 
 def create_app() -> FastAPI:
